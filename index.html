@@ -1,0 +1,98 @@
+<!DOCtype html>
+<html>
+	<head>
+		<title>Jan Petri</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="code_318-41701.jpg" type="image/gif" sizes="16x16">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	    <link rel="stylesheet"
+	        href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+	        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	        crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js"></script>
+		<script src="workExperience.js"></script>
+
+		<style>
+			.round {
+				border-radius: 50% !important;
+			}
+			.font-blue {
+				color: #007bff;
+			}
+			.courier-text {
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 16pt;
+				text-align: justify;
+			}
+			.avatar-col {
+				max-width: 275px;
+				margin-right: 25px;
+			}
+			.links {
+				text-align: center;
+				margin-top: 5px;
+			}
+			.link-item {
+				margin-left: 7px;
+			}
+		</style>
+	</head>
+
+	<body>
+	    <div class="center bg-light jumbotron jumbotron-fluid">
+	        <div class="container">
+				<div class="row" style="justify-content: center;">
+					<div class="col-md-4 avatar-col">
+						<img id="avatar" class="round" src="avatar.jpg" style="height:250px;width:250px;">
+						<div class='links'>
+							<a class='link-item' href="https://www.github.com/jpetri90" target="_blank"><i class="round fab fa-github-square fa-2x"></i></a>
+							<a class='link-item' href="https://www.linkedin.com/in/jan-petri-093652119/" target="_blank"><i class="round fab fa-linkedin fa-2x"></i></a>
+							<a class='link-item' href="mailto:janhendrikpetri@gmail.com"><i class="round fas fa-envelope-square fa-2x"></i></a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div id='intro' class="courier-text">
+							<br>
+							Hi! I'm Jan, a self-taught Developer currently coding in NetSuite's SuiteScript,
+							with a proven history of delivering business value in the ERP and Business Applications world.
+							<br>
+							While the applications I build are behind company doors, here are some key projects I've worked on.
+							<br>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		
+	    <div id="content_work_experience_template"></div>
+	    
+        <!--footer-->
+	    <footer class="mx-auto footer bg-light" style="margin-top: 25px;">
+		    <div class="container footer-text" style="text-align:center;padding:10px;font-family: 'Courier New', Courier, monospace;">
+			    <small id='js-footer-year'>Fueled by <i class="footer-icon fas fa-coffee"></i> and made in Dallas, TX.&nbsp;&copy; </small>
+			</div>
+	    </footer>
+		
+		<!--workprojects card template-->
+	    <script type="x-handlebars-template" id="work_experience_template">
+			<div class="container">
+				<div class="card-columns">
+					{{#each workExperience}}
+					<div class="card" id="{{datatag}}">
+						<div class="card-body">
+							<h5 class="card-title">{{title}}</h5>
+							<p class="card-text"><b class="font-blue">Description: </b>{{description}}</p>
+							<p class="card-text"><b class="font-blue">Stack: </b>{{stack}}</p>
+							<p class="card-text"><b class="font-blue">Business Value: </b>{{business_value}}</p>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+	    </script>
+		<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
