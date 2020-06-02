@@ -5,9 +5,7 @@ function renderTemplate(templateId, targetId, dataObj) {
     $('#'+targetId).html(html);
 }
 
-if (this.window.location.href.indexOf('index') > 0 || this.window.location.href == 'https://jpetri90.github.io/portfolio') {
-    renderTemplate('work_experience_template', 'content_work_experience_template', workExperience);
-}
+renderTemplate('work_experience_template', 'content_work_experience_template', workExperience);
 
 $(function () {
     $('#js-footer-year').html($('#js-footer-year').html() + new Date().getFullYear());
