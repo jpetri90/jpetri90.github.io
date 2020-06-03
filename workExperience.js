@@ -59,7 +59,7 @@ const workExperience = {
       title: 'Customer Facing Communication Development and Maintanance',
       description: 'Creating and maintaining customer facing emails and PDF documents',
       datatag: 'work_' + wcounter++,
-      stack: 'BfO PDF library, trimPath/Freemarker, Thrid Party content rendering framework',
+      stack: 'BfO PDF library, trimPath/Freemarker, Third Party content rendering framework',
       business_value: ''
     },
     {
