@@ -28,6 +28,13 @@ const workExperience = {
       business_value: 'Improved inventory management, reduced shipping cost for business and ability to meet third party resellers custom shipping requirements'
     },
     {
+      title: 'Customized GL Routing Plugin',
+      description: 'Financial Reclassification of certain transaction sets in accordance with business requirements',
+      datatag: 'work_' + wcounter++,
+      stack: 'SuiteScript Custom GL Implementation',
+      business_value: 'Eliminate manual processes and increase accuracy of financial reporting'
+    },
+    {
       title: 'Business Rule Driven Data Synchronization',
       description: 'Business with a hierarchical customer structure needed to feed different subsets of data (i.e. commission or finance related) down the hierarchy.',
       datatag: 'work_' + wcounter++,
