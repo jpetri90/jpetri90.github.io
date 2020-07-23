@@ -14,6 +14,13 @@ const workExperience = {
   workExperience:
   [
     {
+      title: 'Journal Entry Automation Process',
+      description: 'Read and analyze CSV bank statements and post JEs for qualifiying rows.',
+      datatag: 'work_' + wcounter++,
+      stack: 'SuiteScript scheduled script, custom records',
+      business_value: 'Reliable and scalable business process automation enabling accounting to focus their man hours more effectively.'
+    },
+    {
       title: 'Sales Channel Reporting Implementation',
       description: 'To streamline reporting regarding the source of a sales transaction, a variety of server and client side modules were implemented to allow transaction classification in a centralized location.',
       datatag: 'work_' + wcounter++,
@@ -22,7 +29,7 @@ const workExperience = {
     },
     {
       title: 'Transactional Inventory Location Management',
-      description: 'Business required the ability to enforce custom warehouse assignment on transaction sets, specifically for multi-box inventory items.',
+      description: 'Business required the ability to enforce custom warehouse assignment on transaction sets, specifically for multi-box inventory items. Included implementation for order creation and historic backorder cleanup.',
       datatag: 'work_' + wcounter++,
       stack: 'SuiteScript UserEvent scripts, custom SuiteScript modules',
       business_value: 'Improved inventory management, reduced shipping cost for business and ability to meet third party resellers custom shipping requirements'
